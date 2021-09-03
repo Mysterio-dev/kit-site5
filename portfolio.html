@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>КитСайт</title>
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+  <link rel='stylesheet' href='https://unpkg.com/splitting/dist/splitting.css'>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header headroom fixed-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-xxl">
+          <a class="navbar-brand" href="#">
+            <img src="img/svg/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+          </button>
+
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto header__menu">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Портфолио</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Тарифы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Клиентам</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+              <li class="slide1"></li>
+              <li class="slide2"></li>
+            </ul>
+            <ul class="navbar-nav header__contacts">
+              <li class="nav-item header__phone">
+                <a href="tel:+78435282522">+7 (843) 528-25-22</a>
+              </li>
+              <li class="nav-item header__telegram">
+                <a class="nav-link" href="https://t.me/Mrtiimm" target="_blank" rel="nofollow">
+                  <svg height="30" width="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" fill="#039be5" r="12" />
+                    <path
+                      d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z"
+                      fill="#fff" /></svg>
+                  <span> Написать в Telegram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header><!-- End Header -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          Меню
+        </h5>
+        <button type="button" class="offcanvas__button" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg"
+            viewBox="0 0 16 16">
+            <path
+              d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z" />
+          </svg>
+
+        </button>
+
+
+      </div>
+      <div class="offcanvas-body">
+        <div class="offcanvas__menu">
+          <ul>
+            <li><a href="">О нас</a></li>
+            <li><a href="">Портфолио</a></li>
+            <li><a href="">Тарифы</a></li>
+            <li><a href="">Клиентам</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="offcanvas__contacts">
+          <div class="phone">
+            <a href="tel:+78435282522">+7 (843) 528-25-22</a>
+          </div>
+          <div class="telegram">
+            <a href="https://t.me/Mrtiimm" target="_blank" rel="nofollow">
+              <svg height="30" width="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" fill="#039be5" r="12"></circle>
+                <path
+                  d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z"
+                  fill="#fff"></path>
+              </svg>
+              <span>Написать в Telegram</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="offcanvas__social">
+          <p>Мы в соцсетях</p>
+          <ul>
+            <li>
+              <a href="">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor">
+                  <path
+                    d="m12.145 19.5c3.472 0 2.234-2.198 2.502-2.83-.004-.472-.008-.926.008-1.202.22.062.739.325 1.811 1.367 1.655 1.67 2.078 2.665 3.415 2.665h2.461c.78 0 1.186-.323 1.389-.594.196-.262.388-.722.178-1.438-.549-1.724-3.751-4.701-3.95-5.015.03-.058.078-.135.103-.175h-.002c.632-.835 3.044-4.449 3.399-5.895.001-.002.002-.005.002-.008.192-.66.016-1.088-.166-1.33-.274-.362-.71-.545-1.299-.545h-2.461c-.824 0-1.449.415-1.765 1.172-.529 1.345-2.015 4.111-3.129 5.09-.034-1.387-.011-2.446.007-3.233.036-1.535.152-3.029-1.441-3.029h-3.868c-.998 0-1.953 1.09-.919 2.384.904 1.134.325 1.766.52 4.912-.76-.815-2.112-3.016-3.068-5.829-.268-.761-.674-1.466-1.817-1.466h-2.461c-.998 0-1.594.544-1.594 1.455 0 2.046 4.529 13.544 12.145 13.544zm-8.09-13.499c.217 0 .239 0 .4.457.979 2.883 3.175 7.149 4.779 7.149 1.205 0 1.205-1.235 1.205-1.7l-.001-3.702c-.066-1.225-.512-1.835-.805-2.205l3.508.004c.002.017-.02 4.095.01 5.083 0 1.403 1.114 2.207 2.853.447 1.835-2.071 3.104-5.167 3.155-5.293.075-.18.14-.241.376-.241h2.461.01c-.001.003-.001.006-.002.009-.225 1.05-2.446 4.396-3.189 5.435-.012.016-.023.033-.034.05-.327.534-.593 1.124.045 1.954h.001c.058.07.209.234.429.462.684.706 3.03 3.12 3.238 4.08-.138.022-.288.006-2.613.011-.495 0-.882-.74-2.359-2.23-1.328-1.292-2.19-1.82-2.975-1.82-1.524 0-1.413 1.237-1.399 2.733.005 1.622-.005 1.109.006 1.211-.089.035-.344.105-1.009.105-6.345 0-10.477-10.071-10.636-11.996.055-.005.812-.002 2.546-.003z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                  class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+        <!-- Портфолио -->
+        <section class="portfolio__section portfolio__page">
+          <div class="container-xxl">
+            <i class="portfolio__waves" data-aos="fade-up" data-aos-delay="300"></i>
+            <i class="portfolio__waves-two" data-aos="fade-up" data-aos-delay="300"></i>
+            <div class="row" data-masonry='{"percentPosition": true }'>
+              <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="portfolio__company">
+                  <h2 class="main-title" data-splitting data-scroll>
+                    Портфолио
+                  </h2>
+                  <p>Наша команда работает с 2015 года с целью создания удобных, современных и недорогих сайтов и
+                    интернет-проектов на основных системах управления "1С-Битрикс" и "WordPress"
+                  </p>
+                  <a href="" class="main__link">
+                    Посмотреть все портфолио
+                    <svg width="66" height="8" viewBox="0 0 33 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="currentColor" d="M0 1.768h29.464v1.179H0zM29.465 0L33 2.357l-3.536 2.357V0z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="portfolio__card-middle portfolio__card--part">
+                  <a type="button" data-bs-toggle="modal" data-bs-target="#modal1">
+                    <div class="slider-wrapper">
+                      <div class="before-wrapper">
+                        <div class="after-wrapper">
+                          <div class="after-image"></div>
+                        </div>
+                      </div>
+                      <div class="comparison-slider"></div>
+                    </div>
+                    <div class="portfolio__card-txt dark-text">
+                      <span class="portfolio__card-name">alba-group.pro</span>
+                    </div>
+                    <div class="portfolio__card-img"></div>
+                    <div class="portfolio__desc">
+                      <h6 class="portfolio__desc-name">Alba-Group</h6>
+                      <p>
+                        Решения 1С
+                        для роста вашего бизнеса
+                      </p>
+                      <span>
+                        # продвижение
+                      </span>
+    
+                    </div>
+                  </a>
+                </div>
+              </div>
+    
+    
+    
+              <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="portfolio__card-middle portfolio__card--brand">
+                  <a type="button" data-bs-toggle="modal" data-bs-target="#modal2">
+                    <div class="portfolio__card-img"></div>
+    
+                    <div class="portfolio__card-txt dark-text">
+                      <span class="portfolio__card-name">ud-group.com</span>
+                    </div>
+                    <button class="btn"></button>
+                  </a>
+                  <div class="portfolio__desc dark-text">
+                    <h6 class="portfolio__desc-name">UD Group</h6>
+                    <p>
+                      Создаем пространство
+                      возможностей. Для тех,
+                      кто меняет мир.
+                    </p>
+                    <span>
+                      # разработка
+                    </span>
+    
+                  </div>
+                </div>
+              </div>
+    
+    
+              <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="portfolio__card-large">
+                  <a type="button" data-bs-toggle="modal" data-bs-target="#modal3">
+                    <article class="work__item">
+                      <div class="work__item-inner">
+                        <div class="work__item-img-outer">
+                          <img class="work__item-img" src="img/portfolio/remgas/03.jpg" alt="">
+                        </div>
+                      </div>
+                    </article>
+                    <div class="portfolio__card-txt dark-text">
+                      <span class="portfolio__card-name">rem-gaz.ru</span>
+                    </div>
+                    <div class="portfolio__desc dark-text">
+                      <h6 class="portfolio__desc-name">РемГаз</h6>
+                      <p>
+                        Трубы для любых видов работ
+                      </p>
+                      <span>
+                        # разработка
+                      </span>
+    
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="portfolio__card-large portfolio__card--door">
+                  <a type="button" data-bs-toggle="modal" data-bs-target="#modal4">
+                    <span class="portfolio__bg-wrap">
+                      <span class="portfolio__bg"></span>
+                      <span class="portfolio__bg-in"></span>
+                    </span>
+                    <div class="portfolio__card-txt">
+                      <span class="portfolio__card-name">sim-bler.ru</span>
+                    </div>
+                    <div class="portfolio__desc">
+                      <h6 class="portfolio__desc-name">СИМ СИМ</h6>
+                      <p>
+                        Продажа дверей
+                        и фурнитуры
+                      </p>
+                      <span>
+                        # разработка
+                      </span>
+    
+                    </div>
+                  </a>
+                </div>
+              </div>
+    
+              <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="portfolio__card-large portfolio__card--logo" data-btnstroke-index="0">
+                  <a type="button" data-bs-toggle="modal" data-bs-target="#modal5">
+                    <object id="logo-svg" type="image/svg+xml" data="img/portfolio/logo-udacha.svg"></object>
+                    <div class="portfolio__card-txt">
+                      <span class="portfolio__card-name">udacha-retail.ru</span>
+                    </div>
+                    <div class="portfolio__desc">
+                      <h6 class="portfolio__desc-name">РИТЕЙЛ ПАРК
+                        “УДАЧА”</h6>
+                      <p>
+                        Аренда помещений
+                        и магазинов
+                      </p>
+                      <span>
+                        # разработка и поддержка
+                      </span>
+    
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="700">
+                <div class="portfolio__card-small portfolio__card--part-2">
+                  <a type="button" data-bs-toggle="modal" data-bs-target="#modal6">
+                  <div class="portfolio__overlay"></div>
+                    <div class="portfolio__card-txt dark-text">
+                      <span class="portfolio__card-name">udfm.ru</span>
+                    </div>
+                    <div class="portfolio__desc dark-text">
+                      <h6 class="portfolio__desc-name">Отдел эксплуатации</h6>
+                      <span>
+                        # разработка и поддержка
+                      </span>
+                    </div>
+                    <div class="portfolio__card-circle">
+                      <img src="img/portfolio/udfm.ru/01.png" alt="">
+                    </div>
+                  </a>
+                </div>
+            
+              </div>
+    
+    
+    
+            </div>
+          </div>
+        </section>
+
+
+
+    <!-- Футер -->
+    <footer class="footer mt-auto">
+      <div class="container-xxl position-relative">
+        <i class="footer__waves"></i>
+        <div class="row footer__top" data-aos="fade-up">
+          <div class="col-lg-4 col-xl-5">
+            <div class="footer__text">
+              Отправить заявку на разработку
+            </div>
+          </div>
+          <div class="col-lg-8 col-xl-7">
+            <div class="footer__doc">
+              <h4 class="title">Для скачивания</h4>
+              <div class="row g-3">
+                <div class="col-md-6 col-xl-4">
+                  <a href="">Бриф на разработку сайта
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-download" viewBox="0 0 16 16">
+                      <path
+                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                      <path
+                        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                  <a href="">Договор на разработку
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-download" viewBox="0 0 16 16">
+                      <path
+                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                      <path
+                        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                  <a href="">Договор на обслуживание
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-download" viewBox="0 0 16 16">
+                      <path
+                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                      <path
+                        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="footer__form">
+              <form class="row g-4">
+                <div class="col-md-6 col-lg-6">
+                  <input type="text" class="form-control" placeholder="Название компании" autocomplete="off" required>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                  <input type="text" id="phone-mask" class="form-control" autocomplete="off" required>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <input type="text" class="form-control" placeholder="Чем занимается компания?" autocomplete="off"
+                    required>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                  <input type="email" class="form-control" placeholder="E-mail*" autocomplete="off" required>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <input type="text" class="form-control" placeholder="Имя ответственного*" autocomplete="off" required>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                  <div class="footer__content-frame">
+                    <label for="input_file">
+                      <span class="load-icon"><i class="icon-skrep"></i>
+                      </span>
+                      Прикрепить файл с информацией о проекта
+                    </label>
+                    <input type="file" id="input_file" name="input_file">
+
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                    <label class="form-check-label" for="gridCheck">
+                      Нажимая на кнопку, вы соглашаетесь на обработку
+                      <a href="">персональных данных</a>
+
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                  <button type="submit" class="btn-send">Отправить заявку</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row footer__list">
+          <div class="col-lg-3">
+            <div class="footer__logo">
+              <img src="img/logo-2.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <ul>
+              <li>
+                <a href="#">О нас</a>
+              </li>
+              <li>
+                <a href="#">Портфолио</a>
+              </li>
+              <li>
+                <a href="#">Тарифы</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <ul>
+              <li>
+                <a href="#">Клиентам</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-2">
+            <ul>
+              <li>
+                <a class="footer__phone" href="tel:+78435282522">+7 (843) 528-25-22</a>
+              </li>
+              <li>
+                <a class="footer__telegram" href="https://t.me/Mrtiimm" target="_blank" rel="nofollow">Telegram +7 937
+                  600 9752</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="d-flex justify-content-lg-end">
+              <button class="btn-main">Скачать карту партнера</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__copyright">
+            © 2015-2021 "КитСайт" - создание и разработка сайтов любой сложности
+          </div>
+          <div class="footer__info">
+            <ul>
+              <li>
+                <a href="#">Политика конфидициальности</a>
+              </li>
+              <li>
+                <a href="">Лицензионное соглашение</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <!-- <div id="preloader">
+
+    </div> -->
+
+
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+
+    <a href="#" class="back-to-top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-up-short"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+      </svg>
+    </a>
+
+
+<!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="modal__content-wrap">
+              <div class="modal__content">
+                <h1 class="modal__content-title">
+                  ALBA GROUP
+                </h1>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+  
+              </div>
+          
+              <a href="" class="main__link">
+                alba-group.pro
+                <svg width="66" height="8" viewBox="0 0 33 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M0 1.768h29.464v1.179H0zM29.465 0L33 2.357l-3.536 2.357V0z"></path>
+                </svg>
+              </a>
+     
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="modal__content-img">
+              <a href="img/portfolio/albagroup/01.png" data-fancybox="gallery" data-caption="albagroup">
+                <img src="img/portfolio/albagroup/01.png" alt="">
+              </a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="modal__content-wrap">
+              <div class="modal__content">
+                <h1 class="modal__content-title">
+                  UD Group
+                </h1>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+          
+  
+              </div>
+          
+              <a href="" class="main__link">
+                ud-group.com
+                <svg width="66" height="8" viewBox="0 0 33 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M0 1.768h29.464v1.179H0zM29.465 0L33 2.357l-3.536 2.357V0z"></path>
+                </svg>
+              </a>
+     
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="modal__content-img">
+              <a href="img/02.png" data-fancybox="gallery" data-caption="UD Group">
+                <img src="img/02.png" alt="">
+              </a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="modal__content-wrap">
+              <div class="modal__content">
+                <h1 class="modal__content-title">
+                  РемГаз
+                </h1>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+          
+  
+              </div>
+          
+              <a href="" class="main__link">
+                rem-gaz.ru
+                <svg width="66" height="8" viewBox="0 0 33 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M0 1.768h29.464v1.179H0zM29.465 0L33 2.357l-3.536 2.357V0z"></path>
+                </svg>
+              </a>
+     
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="modal__content-img">
+              <a href="img/02.png" data-fancybox="gallery" data-caption="РемГаз">
+                <img src="img/02.png" alt="">
+              </a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal 4 -->
+<div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="modal__content-wrap">
+              <div class="modal__content">
+                <h1 class="modal__content-title">
+                  СИМ СИМ
+                </h1>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+          
+  
+              </div>
+          
+              <a href="" class="main__link">
+                sim-bler.ru
+                <svg width="66" height="8" viewBox="0 0 33 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M0 1.768h29.464v1.179H0zM29.465 0L33 2.357l-3.536 2.357V0z"></path>
+                </svg>
+              </a>
+     
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="modal__content-img">
+              <a href="img/02.png" data-fancybox="gallery" data-caption="СИМ СИМ">
+                <img src="img/02.png" alt="">
+              </a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal 5 -->
+<div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="modal__content-wrap">
+              <div class="modal__content">
+                <h1 class="modal__content-title">
+                  РИТЕЙЛ ПАРК “УДАЧА”
+                </h1>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+          
+  
+              </div>
+          
+              <a href="" class="main__link">
+                udacha-retail.ru
+                <svg width="66" height="8" viewBox="0 0 33 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M0 1.768h29.464v1.179H0zM29.465 0L33 2.357l-3.536 2.357V0z"></path>
+                </svg>
+              </a>
+     
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="modal__content-img">
+              <a href="img/02.png" data-fancybox="gallery" data-caption="РИТЕЙЛ ПАРК “УДАЧА”">
+                <img src="img/02.png" alt="">
+              </a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal 6 -->
+<div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="modal__content-wrap">
+              <div class="modal__content">
+                <h1 class="modal__content-title">
+                  Отдел эксплуатации
+                </h1>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+                <p class="modal__content-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem voluptate quisquam quae adipisci odio neque sed. Fugiat, impedit ab.
+                </p>
+          
+  
+              </div>
+          
+              <a href="" class="main__link">
+                udfm.ru
+                <svg width="66" height="8" viewBox="0 0 33 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M0 1.768h29.464v1.179H0zM29.465 0L33 2.357l-3.536 2.357V0z"></path>
+                </svg>
+              </a>
+     
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="modal__content-img">
+              <a href="img/02.png" data-fancybox="gallery" data-caption="Отдел эксплуатации">
+                <img src="img/02.png" alt="">
+              </a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+    <!-- Vendor JS Files -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/vendor.js"></script>
+    <script src='https://unpkg.com/splitting/dist/splitting.js'></script>
+    <script src='https://unpkg.com/scroll-out/dist/scroll-out.min.js'></script>
+
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
+
+
+
+
+</body>
+
+</html>
